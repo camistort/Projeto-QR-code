@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | QR code component</title>
+
+  <style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+    }
+
+    #externo {
+      background: #D5E1EF;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    #interno {
+      background: white;
+      width: 235px;
+      height: 360px;
+      border-radius: 15px;
+      padding-top: 12.5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+    }
+
+    #caixaQR {
+      background-image: url("images/image-qr-code.png");
+      background-size: cover;
+      width: 210px;
+      height: 210px;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    #texto1 {
+      margin-top: 15px;
+      font-size: 16px;
+      text-align: center;
+      color: hsl(218, 44%, 22%);
+      font-family: "Outfit", sans-serif;
+      font-weight: 700;
+    }
+
+    #texto2 { 
+      font-size: 11px; 
+      text-align: center;
+      color: hsl(220, 15%, 55%);
+      font-family: "Outfit", sans-serif;
+      font-weight: 400;
+      margin-top: 10px; 
+    }
+  </style>
+
+</head>
+<body>
+
+  <div id="externo">
+
+    <div id="interno">
+      <div id="caixaQR">
+        <!--<img src="images/image-qr-code.png" width="200">-->
+      </div>
+
+      <div id="texto1">
+        Improve your front-end<br>
+        skills by building projects
+      </div>
+
+      <div id="texto2">
+        Scan the QR code to visit Frontend<br>
+        Mentor and take your coding skills to<br>
+        the next level
+      </div>
+    </div>
+
+    <p id="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Camila Almeida</a>.
+    </p>
+  </div>
+  
+  
+</body>
+</html>
